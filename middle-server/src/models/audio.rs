@@ -1,6 +1,6 @@
+use crate::errors::handler::HandlerError;
 use tungstenite::Utf8Bytes;
 
-use crate::errors::handler::HandlerError;
 pub type RwLockAudioInfo = std::sync::Arc<tokio::sync::RwLock<AudioInfo>>;
 
 #[derive(Default, Debug, Clone)]
